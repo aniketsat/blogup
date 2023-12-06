@@ -6,6 +6,7 @@ const errorHandler = (err, req, res, next) => {
   if (res.customErr) {
     message = err.message;
   } else {
+    console.log(err);
     message = "Something went wrong";
   }
 
